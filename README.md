@@ -1,6 +1,5 @@
-# _Programming Track Suggester_
-## 03/29/2019
-#### _A brief questionnaire to provide user with a suggestion of which programming track to choose._
+# Programming Track Suggester
+_03/29/2019_
 
 #### By **Tessa Sullivan**
 
