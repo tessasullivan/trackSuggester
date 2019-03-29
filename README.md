@@ -13,7 +13,9 @@ After answering 5 simple questions, the user will be provided with a suggestion 
 * Open index.html in a web browser and answer the questions
 
 
-## Known Bugs
+## Known Issues
+
+* Currently, question 4 is not currently being used to determine results
 
 ## Support and contact details
 
