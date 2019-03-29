@@ -9,9 +9,16 @@ function determineTrack (answer1, answer2, answer3, answer4, answer5) {
     }
   }
   // question 1, answer b) data
-//  if (answer1 === "b") {
-
-//  }
+  if (answer1 === "b") {
+    // if user prefers traditional enterprises
+    if (answer2 === "c") {
+      result = "Java/Android";
+    } else if (answer5 === "b") {
+      result = "C#/.NET";
+    } else {
+      result = "PHP/Drupal";
+    }
+  }
   // question 1, answer c) business
   // question 1, answer d) mobile
   // question 1, answer e) unsure
