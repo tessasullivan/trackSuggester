@@ -38,6 +38,16 @@ function determineTrack (answer1, answer2, answer3, answer4, answer5) {
     }
   }
   // question 1, answer e) unsure
+  if (answer1 === "e") {
+    // if user is interested in mobile devices
+    if (answer3 === "c") {
+      result = "Java/Android";
+    } else if (answer3 === "d") {
+      result = "C#/.NET";
+    } else {
+      result = "Ruby/Rails";
+    }
+  }
   return result;
 }
 
