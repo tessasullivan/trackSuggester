@@ -29,6 +29,14 @@ function determineTrack (answer1, answer2, answer3, answer4, answer5) {
     }
   }
   // question 1, answer d) mobile
+  if (answer1 === "d") {
+    if (answer2 === "b") {
+      // if user prefers startups
+      result = "Ruby/Rails";
+    } else {
+      result = "Java/Android";
+    }
+  }
   // question 1, answer e) unsure
   return result;
 }
