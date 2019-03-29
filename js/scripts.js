@@ -9,9 +9,9 @@ function determineTrack (answer1, answer2, answer3, answer4, answer5) {
     }
   }
   // question 1, answer b) data
-  if (answer1 === "b") {
+//  if (answer1 === "b") {
 
-  }
+//  }
   // question 1, answer c) business
   // question 1, answer d) mobile
   // question 1, answer e) unsure
@@ -28,14 +28,14 @@ $(document).ready(function() {
     var result = determineTrack(answer1, answer2, answer3, answer4, answer5);
     //alert ("answers are " + answer1 + ", " + answer2 + ", " + answer3 + ", " + answer4 + ", " + answer5);
 
-    if (answer1 && answer2 && answer3 && answer4 && answer5) {
+//    if (answer1 && answer2 && answer3 && answer4 && answer5) {
     //  alert("answers present")
       $("#survey").hide();
       $("#result").append("<p>" + answer1 + ", " + answer2 + ", " + answer3 + ", " + answer4 + ", " + answer5 + "</p>");
       $("#result").append("<p>Result is " + result + "</p>");
-    } else {
-      alert("Please answer all questions before hitting Submit.")
-    }
+//    } else {
+//      alert("Please answer all questions before hitting Submit.")
+//    }
 
 
     event.preventDefault();
