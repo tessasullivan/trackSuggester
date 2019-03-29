@@ -1,7 +1,42 @@
+function determineTrack (answer1, answer2, answer3, answer4, answer5) {
+  var result;
+  // question 1, answer a) UI
+  if (answer1 === "a") {
+    if (answer2 === "b") {
+      result = "Ruby/Rails";
+    } else {
+      result = "CSS/Design";
+    }
+  }
+  // question 1, answer b) data
+  if (answer1 === "b") {
 
+  }
+  // question 1, answer c) business
+  // question 1, answer d) mobile
+  // question 1, answer e) unsure
+  return result;
+}
 
 $(document).ready(function() {
-  $("form#quiz").submit(function(event) {
+  $("form#survey").submit(function(event) {
+    var answer1 = $("input:radio[name=question1]:checked").val();
+    var answer2 = $("input:radio[name=question2]:checked").val();
+    var answer3 = $("input:radio[name=question3]:checked").val();
+    var answer4 = $("input:radio[name=question4]:checked").val();
+    var answer5 = $("input:radio[name=question5]:checked").val();
+    var result = determineTrack(answer1, answer2, answer3, answer4, answer5);
+    //alert ("answers are " + answer1 + ", " + answer2 + ", " + answer3 + ", " + answer4 + ", " + answer5);
+
+    if (answer1 && answer2 && answer3 && answer4 && answer5) {
+    //  alert("answers present")
+      $("#survey").hide();
+      $("#result").append("<p>" + answer1 + ", " + answer2 + ", " + answer3 + ", " + answer4 + ", " + answer5 + "</p>");
+      $("#result").append("<p>Result is " + result + "</p>");
+    } else {
+      alert("Please answer all questions before hitting Submit.")
+    }
+
 
     event.preventDefault();
   });

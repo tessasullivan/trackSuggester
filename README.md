@@ -1,11 +1,11 @@
-# _Dating Quiz_
+# _Programming Track Suggester_
+## 03/29/2019
+#### _A brief questionnaire to provide user with a suggestion of which programming track to choose.
 
-#### _Answer a few brief questions and receive a dating match, 03/28/2019_
-
-#### By _**Tessa Sullivan, Brendan Hellar**_
+#### By _**Tessa Sullivan**_
 
 ## Description
-Enter in your age, sex, orientation, and choose your favorite animal and receive the name and picture of the ideal match for you!
+After answering 5 simple questions, the user will be provided with a suggestion on which programming track they would find most suited their needs.
 
 ## Setup/Installation Requirements
 
@@ -14,11 +14,11 @@ Enter in your age, sex, orientation, and choose your favorite animal and receive
 
 
 ## Known Bugs
-* The Bi orientation does not currently return any matches.  
 
 ## Support and contact details
 
-_Contact Tessa Sullivan at tessa.sullivan@gmail.com or Brendan Hellar at bwhellar@gmail.com._
+_Contact Tessa Sullivan at tessa.sullivan@gmail.com_
+
 ## Technologies Used
 
 * Relies upon jQuery 3.3.1
@@ -29,4 +29,4 @@ _Contact Tessa Sullivan at tessa.sullivan@gmail.com or Brendan Hellar at bwhella
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2019 **_Tessa Sullivan and Brendan Hellar_**
+Copyright (c) 2019 **_Tessa Sullivan_**
