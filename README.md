@@ -24,7 +24,6 @@ Contact Tessa Sullivan at tessa.sullivan@gmail.com
 
 * Relies upon jQuery 3.3.1
 * Links to Bootstrap 4.3.1
-* Bootstrap classes used includes form-control
 
 ### License
 
