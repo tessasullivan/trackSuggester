@@ -1,5 +1,7 @@
 function determineTrack (answer1, answer2, answer3, answer4, answer5) {
   var result;
+  var resultImage;
+
   // question 1, answer a) UI
   if (answer1 === "a") {
     if (answer2 === "b") {
@@ -48,7 +50,19 @@ function determineTrack (answer1, answer2, answer3, answer4, answer5) {
       result = "Ruby/Rails";
     }
   }
-  return result;
+
+  if (result === "C#/.NET") {
+    resultImage = 'img/C.net.png';
+  } else if (result === 'CSS/Design') {
+    resultImage = 'img/artist-board-bracelet-1327214.jpg';
+  } else if (result === "Java/Android") {
+    resultImage = 'img/Java-Android-640x353.jpg';
+  } else if (result === 'PHP/Drupal') {
+    resultImage = 'img/drupal-php.jpg';
+  } else if (result === 'Ruby/Rails') {
+    resultImage = 'img/Ruby_On_Rails_Logo.png';
+  }
+  return [result, resultImage];
 }
 
 $(document).ready(function() {
@@ -58,17 +72,19 @@ $(document).ready(function() {
     var answer3 = $("input:radio[name=question3]:checked").val();
     var answer4 = $("input:radio[name=question4]:checked").val();
     var answer5 = $("input:radio[name=question5]:checked").val();
-    var result = determineTrack(answer1, answer2, answer3, answer4, answer5);
+    var suggestedTrack = determineTrack(answer1, answer2, answer3, answer4, answer5);
+    var track = suggestedTrack[0];
+    var trackImage = suggestedTrack[1];
     //alert ("answers are " + answer1 + ", " + answer2 + ", " + answer3 + ", " + answer4 + ", " + answer5);
 
-//    if (answer1 && answer2 && answer3 && answer4 && answer5) {
-    //  alert("answers present")
+   if (answer1 && answer2 && answer3 && answer4 && answer5) {
       $("#survey").hide();
-      $("#result").append("<p>" + answer1 + ", " + answer2 + ", " + answer3 + ", " + answer4 + ", " + answer5 + "</p>");
-      $("#result").append("<p>Result is " + result + "</p>");
-//    } else {
-//      alert("Please answer all questions before hitting Submit.")
-//    }
+      $("#result").append("<h1>Programming Track Suggestion</h1>");
+      $("#result").append("<img src=" + trackImage + ">");
+      $("#result").append("<p>We believe the <strong>" + track + "</strong> track will be the best choice.</p>");
+   } else {
+     alert("Please answer all questions before hitting Submit.")
+   }
 
 
     event.preventDefault();
