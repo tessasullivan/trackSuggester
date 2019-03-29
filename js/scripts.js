@@ -20,6 +20,14 @@ function determineTrack (answer1, answer2, answer3, answer4, answer5) {
     }
   }
   // question 1, answer c) business
+  if (answer1 === "c") {
+  // if user prefers Mac or Unix
+    if (answer5 === "a" || answer5 === "c") {
+      result = "Java/Android";
+    } else {
+      result = "C#/.NET";
+    }
+  }
   // question 1, answer d) mobile
   // question 1, answer e) unsure
   return result;
