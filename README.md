@@ -10,6 +10,7 @@ After answering 5 simple questions, the user will be provided with a suggestion 
 
 * Clone this repository
 * Open index.html in a web browser and answer the questions
+
 _OR_
 * Go to https://tessasullivan.github.io/trackSuggester
 
