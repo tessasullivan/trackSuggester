@@ -34,7 +34,7 @@ This software (sans images) is licensed under the MIT license.
 **Image Source:**
 * Ruby on Rails (Ruby_On_Rails_Logo.png): https://en.wikipedia.org/wiki/Ruby_on_Rails
 * Be Creative, Design (artist-board-bracelet-1327214.jpg): https://www.pexels.com
-J* ava/Android (Java-Android-640x353.jpg):
+* Java/Android (Java-Android-640x353.jpg):
   https://www.extremetech.com/mobile/220136-google-plans-to-remove-oracles-java-apis-from-android-n
 * PHP/Drupal (drupal-php.jpg) http://allabouttodd.com/story/how-do-i-use-php-drupal-8
 * C#/.NET (C.net.png): https://igntechit.com/fundamentals-c-training-tutorial/
